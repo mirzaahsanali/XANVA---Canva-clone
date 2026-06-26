@@ -691,6 +691,42 @@ export default function RightSidebar() {
               </div>
             )}
           </div>
+
+          {/* ── Developer Footer ── */}
+          <div style={{
+            padding: '12px 14px',
+            borderTop: '1px solid #E5E7EB',
+            flexShrink: 0,
+            background: '#F8F9FC',
+          }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+              <div style={{ fontSize: 9, fontWeight: 600, color: '#9CA3AF', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+                Developer
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+                <p style={{ fontSize: 11, fontWeight: 500, color: '#111827', fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+                  Mirza Ahsan Ali
+                </p>
+                <a
+                  href="https://github.com/mirzaahsanali/XANVA---Canva-clone"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    fontSize: 10,
+                    color: '#7C3AED',
+                    textDecoration: 'none',
+                    fontWeight: 500,
+                    transition: 'color 150ms ease',
+                    cursor: 'pointer',
+                  }}
+                  onMouseEnter={e => (e.currentTarget as HTMLElement).style.color = '#EC4899'}
+                  onMouseLeave={e => (e.currentTarget as HTMLElement).style.color = '#7C3AED'}
+                >
+                  → GitHub Repository
+                </a>
+              </div>
+            </div>
+          </div>
         </aside>
       </div>
     </div>
